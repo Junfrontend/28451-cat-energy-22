@@ -1,0 +1,128 @@
+.show-more-cards {
+  min-height: 158px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.show-more-cards__button {
+  border: none;
+  background-color: @basic-grey;
+  color: @special-dark-grey;
+  font-family: @basic-font, "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 280px;
+  height: 40px;
+  margin-top: 20px;
+  padding-top: 2px;
+  padding-left: 9px;
+
+  &:hover {
+    background-color: @special-grey-light;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
+}
+
+.show-more-cards__header {
+  font-family: @basic-font, "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 3px;
+  letter-spacing: -0.15px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("/img/plus_icon.svg");
+    background-position: 54%;
+    margin: 0 auto;
+    margin-top: 4px;
+    margin-bottom: 23px;
+  }
+}
+
+.show-more-cards__description {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 8px;
+  color: @special-dark-grey;
+}
+
+@media (min-width: 768px) {
+  .show-more-cards {
+    background: white;
+    border: 2px solid @basic-grey;
+    justify-content: flex-start;
+    height: 420px;
+    margin-top: 80px;
+  }
+
+  .show-more-cards__header {
+    width: 134px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 0;
+  }
+
+  .show-more-cards__header::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 50px auto;
+    background: url("/img/plus_icon.svg");
+  }
+
+  .show-more-cards__description {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    margin-top: 21px;
+    margin-bottom: 87px;
+    text-align: center;
+  }
+
+  .card-list__item:last-child {
+    padding-bottom: 10px;
+  }
+
+  .show-more-cards__button {
+    width: 249px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .show-more-cards__header::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 48px 42px 54px 32px;
+    background: url("/img/plus_icon.svg");
+  }
+
+  .show-more-cards__button {
+    width: 169px;
+  }
+}

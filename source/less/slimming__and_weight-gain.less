@@ -1,0 +1,298 @@
+.slimming-and-weight-gain {
+  background-color: white;
+  min-height: 268px;
+  padding-bottom: 20px;
+}
+
+.slimming-and-weight-gain__background {
+  background-color: @basic-grey;
+  display: flex;
+  flex-direction: column;
+  padding-top: 11px;
+}
+
+.slimming-and-weight-gain__header {
+  font-family: @basic-font, "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: black;
+  margin: 0;
+  width: 100%;
+  height: 73px;
+  display: flex;
+  align-items: center;
+}
+
+.slimming-and-weight-gain__header--slimming {
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 53px;
+    background: url("/img/slimming_image.svg") no-repeat;
+    margin: 0 20px;
+  }
+}
+
+.slimming-and-weight-gain__header--weight-gain {
+  &::before {
+    content: "";
+    display: block;
+    width: 67px;
+    height: 50px;
+    background: url("/img/cat_tiger_image.svg") no-repeat;
+    margin-left: 11px;
+    margin-right: 13px;
+  }
+}
+
+.slimming-and-weight-gain__description {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: @special-dark-grey;
+  margin: 0;
+  margin-top: 14px;
+  padding-left: 20px;
+  padding-right: 23px;
+  text-align: left;
+}
+
+.slimming-and-weight-gain__button-link {
+  font-family: @basic-font, "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 0;
+  padding-top: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    margin-left: 15px;
+    background: url("/img/arrow.svg");
+    background-color: @basic-grey;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    &::after {
+      transform: translate(10px) scaleX(1.5);
+    }
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .slimming-and-weight-gain {
+    margin: 0;
+  }
+
+  .slimming-and-weight-gain--slimming,
+  .slimming-and-weight-gain--weight-gain {
+    padding-bottom: 30px;
+  }
+
+  .slimming-and-weight-gain__header {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .slimming-and-weight-gain__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-left: 51px;
+    padding: 0;
+    height: 96px;
+    width: 377px;
+  }
+
+  .slimming-and-weight-gain__description--weight-gain {
+    width: 344px;
+  }
+
+  .slimming-and-weight-gain__background {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  .slimming-and-weight-gain__background--weight-gain {
+    padding-top: 13px;
+    padding-bottom: 5px;
+  }
+
+  .slimming-and-weight-gain__header--slimming {
+    position: relative;
+    margin-left: 53px;
+    margin-top: 38px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 212px;
+      background: url("/img/slimming_image.svg") no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 22px;
+      left: 392px;
+      z-index: 1;
+    }
+  }
+
+  .slimming-and-weight-gain__header--weight-gain {
+    position: relative;
+    margin-left: 53px;
+    margin-top: 45px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 268px;
+      height: 200px;
+      background: url("/img/cat_tiger_image.svg") no-repeat;
+      margin: 0;
+      background-size: cover;
+      position: absolute;
+      top: 32px;
+      left: 358px;
+      z-index: 1;
+    }
+  }
+
+  .slimming-and-weight-gain__button-link {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-left: 51px;
+    margin-top: 50px;
+    margin-bottom: 52px;
+
+    &::after {
+      width: 32px;
+      height: 10px;
+      margin-left: 26px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .slimming-and-weight-gain {
+    width: 570px;
+    padding: 0;
+    margin-top: 82px;
+    margin-bottom: 71px;
+  }
+
+  .slimming-and-weight-gain--slimming {
+    margin-left: 110px;
+  }
+
+  .slimming-and-weight-gain--weight-gain {
+    margin-right: 110px;
+  }
+
+  .slimming-and-weight-gain__header {
+    margin: 0;
+  }
+
+  .slimming-and-weight-gain__background {
+    padding: 0;
+  }
+
+  .slimming-and-weight-gain__header--slimming {
+    position: relative;
+    margin-left: 214px;
+    margin-top: 57px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 106px;
+      background: url("/img/slimming_image.svg") no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -17px;
+      left: -182px;
+      z-index: 1;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .slimming-and-weight-gain__description {
+    margin-top: 56px;
+    width: 470px;
+  }
+
+  .slimming-and-weight-gain__button-link {
+    margin-top: 2px;
+    margin-bottom: 58px;
+
+    &::after {
+      top: 8px;
+      left: 137px;
+    }
+  }
+
+  .slimming-and-weight-gain__header--weight-gain {
+    position: relative;
+    margin-left: 214px;
+    margin-top: 57px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 134px;
+      height: 100px;
+      background: url("/img/cat_tiger_image.svg") no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -11px;
+      left: -192px;
+      z-index: 1;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
