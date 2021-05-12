@@ -1,0 +1,123 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list li {
+    height: 64px;
+    width: 320px;
+    padding-bottom: 2px;
+  }
+
+  .nav-list__item {
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    font-family: @basic-font;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    width: auto;
+    text-align: center;
+    padding-top: 21px;
+  }
+
+  .nav-list__item:nth-child(1) {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    min-width: 440px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 43px;
+    list-style: none;
+  }
+
+  .nav-list__item {
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: @basic-font;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    padding-bottom: 4px;
+  }
+
+  .nav-list__item--botton-border-green {
+    border-bottom: 2px solid @basic-green;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header--white-background .nav-list__item {
+    color: black;
+    font-size: 20px;
+    line-height: 39px;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 478px;
+    justify-content: space-between;
+  }
+
+  .nav-list__item {
+    color: white;
+    font-size: 20px;
+    line-height: 39px;
+  }
+
+  .nav-list__item--botton-border-green {
+    border-bottom: 2px solid @basic-green;
+    padding-bottom: 6px;
+    width: 95%;
+  }
+
+  .nav-list__item--black {
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active,
+    &:focus {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .nav-list__item--botton-border-white {
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active,
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .nav-list__item--white {
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active,
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

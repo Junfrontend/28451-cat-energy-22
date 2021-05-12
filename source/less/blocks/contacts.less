@@ -1,0 +1,125 @@
+.contacts__header-invite {
+  font-family: @basic-font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+.footer__contacts--white-background-form {
+  .contacts__header-invite {
+    margin-left: 18px;
+    margin-top: 2px;
+    line-height: 20px;
+  }
+
+  .contacts__addres {
+    margin-top: 3px;
+    margin-left: 0;
+  }
+}
+
+.footer__contacts--white-background-catalog {
+  .contacts__addres {
+    margin-top: 3px;
+    margin-left: 0;
+  }
+
+  .contacts__header-invite {
+    margin-left: 18px;
+    margin-top: 2px;
+    line-height: 20px;
+  }
+}
+
+.contacts__addres {
+  font-family: "Arial", "PT Sans Narrow", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: @special-dark-grey;
+  margin: 0;
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+@media (min-width: 768px) {
+  .contacts__header-invite {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .footer__contacts--white-background-form {
+    .contacts__header-invite {
+      margin-left: 0;
+      line-height: 26px;
+    }
+  }
+
+  .footer__contacts--white-background-catalog {
+    .contacts__addres {
+      margin-top: 8px;
+    }
+
+    .contacts__header-invite {
+      margin-left: 0;
+      margin-top: 8px;
+      line-height: 26px;
+    }
+  }
+
+  .contacts__addres {
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 5px;
+
+    & span {
+      display: block;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .contacts__addres {
+    width: 155px;
+    text-align: left;
+    margin-left: 87px;
+    margin-top: 4px;
+
+    & span {
+      display: block;
+      padding-top: 20px;
+    }
+  }
+
+  .contacts__header-invite {
+    margin-left: 63px;
+    width: 163px;
+  }
+
+  .footer__contacts--white-background-index {
+    .contacts__header-invite {
+      margin-left: 76px;
+    }
+  }
+
+  .footer__contacts--white-background-catalog {
+    .contacts__header-invite {
+      margin-left: 76px;
+    }
+  }
+
+  .footer__contacts--white-background-form {
+    .contacts__header-invite {
+      margin-left: 77px;
+    }
+  }
+}

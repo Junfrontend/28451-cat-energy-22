@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Еда для круглых пухляшей</title>
   <link rel="stylesheet" href="css/style.min.css" type='text/css'>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="../fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page">
@@ -34,8 +34,8 @@
   <main class="catalog-list">
     <h1 class="catalog-list__header ">Каталог продукции</h1>
     <ul class="catalog-list__cards card-list">
-      <li class="card-list__item">
-        <a href="#"><img class="card-list__item-image" src="img/chiken_500_1x.png" srcset="img/chiken_500_2x.png 2x"  alt="Картинка товара" width="68" height="87"></a>
+      <li class="card-list__item card">
+        <a href="#"><img class="card__image" src="img/chiken_500_1x.png" srcset="img/chiken_500_2x.png 2x"  alt="Картинка товара" width="68" height="87"></a>
         <div class="card-list__item-description card-description">
           <a href="#"><h2 class="card-description__header">Cat Energy PRO 500 г</h2></a>
           <div class="card-description__text wrapper-text">
@@ -47,10 +47,10 @@
             <p class="wrapper-text__item">700 Р.</p>
           </div>
         </div>
-        <button class="card-list__item__button">Заказать</button>
+        <button class="card__button">Заказать</button>
       </li>
-      <li class="card-list__item">
-        <a href="#"><img class="card-list__item-image" src="img/chiken_1000_1x.png" srcset="img/chiken_1000_2x.png 2x"
+      <li class="card-list__item card">
+        <a href="#"><img class="card__image" src="img/chiken_1000_1x.png" srcset="img/chiken_1000_2x.png 2x"
           alt="Картинка товара" width="68" height="87"></a>
         <div class="card-list__item-description card-description">
           <a href="#"><h2 class="card-description__header">Cat Energy PRO 1000 г</h2></a>
@@ -63,10 +63,10 @@
             <p class="wrapper-text__item">1000 Р.</p>
           </div>
         </div>
-        <button class="card-list__item__button">Заказать</button>
+        <button class="card__button">Заказать</button>
       </li>
-      <li class="card-list__item">
-        <a href="#"></a><img class="card-list__item-image" src="img/fish_500_1x.png" srcset="img/fish_500_2x.png 2x" alt="Картинка товара" width="68" height="87"></a>
+      <li class="card-list__item card">
+        <a href="#"></a><img class="card__image" src="img/fish_500_1x.png" srcset="img/fish_500_2x.png 2x" alt="Картинка товара" width="68" height="87"></a>
         <div class="card-list__item-description card-description">
           <a href="#"></a><h2 class="card-description__header">Cat Energy PRO 500 г</h2></a>
           <div class="card-description__text wrapper-text">
@@ -78,10 +78,10 @@
             <p class="wrapper-text__item">700 Р.</p>
           </div>
         </div>
-        <button class="card-list__item__button">Заказать</button>
+        <button class="card__button">Заказать</button>
       </li>
-      <li class="card-list__item">
-        <img class="card-list__item-image" src="img/fish_1000_1x.png" srcset="img/fish_1000_2x.png 2x" alt="Картинка товара" width="68" height="87">
+      <li class="card-list__item card">
+        <img class="card__image" src="img/fish_1000_1x.png" srcset="img/fish_1000_2x.png 2x" alt="Картинка товара" width="68" height="87">
         <div class="card-list__item-description card-description">
           <h2 class="card-description__header">Cat Energy PRO 1000 г</h2>
           <div class="card-description__text wrapper-text">
@@ -93,10 +93,10 @@
             <p class="wrapper-text__item">1000 Р.</p>
           </div>
         </div>
-        <button class="card-list__item__button">Заказать</button>
+        <button class="card__button">Заказать</button>
       </li>
-      <li class="card-list__item">
-        <img class="card-list__item-image" src="img/buckwheat_500_1x.png" srcset="img/buckwheat_500_2x.png 2x" alt="Картинка товара" width="68" height="87">
+      <li class="card-list__item card">
+        <img class="card__image" src="img/buckwheat_500_1x.png" srcset="img/buckwheat_500_2x.png 2x" alt="Картинка товара" width="68" height="87">
         <div class="card-list__item-description card-description">
           <h2 class="card-description__header">Cat Energy slim 500 г</h2>
           <div class="card-description__text wrapper-text">
@@ -108,10 +108,10 @@
             <p class="wrapper-text__item">400 Р.</p>
           </div>
         </div>
-        <button class="card-list__item__button">Заказать</button>
+        <button class="card__button">Заказать</button>
       </li>
-      <li class="card-list__item">
-        <img class="card-list__item-image " src="img/buckwheat_1000_1x.png" srcset="img/buckwheat_1000_1x.png 1x, img/buckwheat_1000_2x.png 2x"
+      <li class="card-list__item card">
+        <img class="card__image " src="img/buckwheat_1000_1x.png" srcset="img/buckwheat_1000_1x.png 1x, img/buckwheat_1000_2x.png 2x"
           alt="Картинка товара" width="68" height="87">
         <div class="card-list__item-description card-description">
           <h2 class="card-description__header">Cat Energy slim 1000 г</h2>
@@ -124,10 +124,10 @@
             <p class="wrapper-text__item">700 Р.</p>
           </div>
         </div>
-        <button class="card-list__item__button">Заказать</button>
+        <button class="card__button">Заказать</button>
       </li>
-      <li class="card-list__item">
-        <img class="card-list__item-image" src="img/rice_500_1x.png" srcset="img/rice_500_2x.png 2x" alt="Картинка товара" width="68" height="87">
+      <li class="card-list__item card">
+        <img class="card__image" src="img/rice_500_1x.png" srcset="img/rice_500_2x.png 2x" alt="Картинка товара" width="68" height="87">
         <div class="card-list__item-description card-description">
           <h2 class="card-description__header">Cat Energy slim 500 г</h2>
           <div class="card-description__text wrapper-text">
@@ -139,7 +139,7 @@
             <p class="wrapper-text__item">500 Р.</p>
           </div>
         </div>
-        <button class="card-list__item__button">Заказать</button>
+        <button class="card__button">Заказать</button>
       </li>
       <li class="card-list__item show-more-cards">
         <h2 class="show-more-cards__header">Показать еще 100500 товаров</h2>

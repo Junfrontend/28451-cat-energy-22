@@ -1,0 +1,124 @@
+.item-wrapper__description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+  margin-left: 1px;
+  text-transform: uppercase;
+  font-family: @basic-font;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item-wrapper__count-and-price {
+  margin: 0;
+  margin-bottom: 2px;
+  font-family: "Arial", "PT Sans Narrow", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: @special-dark-grey;
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+}
+
+.item-wrapper__button {
+  border: none;
+  background-color: @basic-green;
+  color: white;
+  font-family: @basic-font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 280px;
+  height: 40px;
+
+  &:hover {
+    background-color: @basic-green-hover-button;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @basic-green-hover-button;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 768px) {
+  .item-wrapper__button {
+    width: 100%;
+    margin-top: 11px;
+  }
+
+  .item-wrapper__description {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .item-wrapper__count-and-price {
+    font-size: 16px;
+    line-height: 20px;
+    width: 225px;
+    margin-top: 4px;
+  }
+
+  .card-list-extra__item:nth-child(2) .item-wrapper__count-and-price {
+    width: 225px;
+  }
+
+  .card-list-extra__item:nth-child(3) .item-wrapper__count-and-price {
+    width: 158px;
+  }
+
+  .card-list-extra__item:nth-child(4) .item-wrapper__count-and-price {
+    width: 140px;
+  }
+
+  .card-list-extra__item:nth-child(5) .item-wrapper__count-and-price {
+    width: 215px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .item-wrapper__button {
+    width: 244px;
+    margin-top: 14px;
+    margin-left: 37px;
+  }
+
+  .item-wrapper__description {
+    margin-top: 24px;
+  }
+
+  .item-wrapper__count-and-price {
+    margin-left: 162px;
+    margin-top: 29px;
+    height: 20px;
+    width: 288px;
+  }
+
+  .card-list-extra__item:nth-child(2) .item-wrapper__count-and-price {
+    width: 288px;
+    margin-left: 164px;
+  }
+
+  .card-list-extra__item:nth-child(3) .item-wrapper__count-and-price {
+    width: 280px;
+    margin-left: 197px;
+    margin-right: 8px;
+  }
+
+  .card-list-extra__item:nth-child(4) .item-wrapper__count-and-price {
+    width: 288px;
+    margin-left: 257px;
+  }
+
+  .card-list-extra__item:nth-child(5) .item-wrapper__count-and-price {
+    width: 288px;
+    margin-left: 236px;
+  }
+}

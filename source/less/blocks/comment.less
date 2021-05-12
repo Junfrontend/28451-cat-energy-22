@@ -1,0 +1,117 @@
+.comment__header h2 {
+  display: flex;
+  align-items: center;
+  font-family: @basic-font;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-weight: normal;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 158px;
+    height: 0;
+    border: 1px solid #68b738;
+    position: relative;
+    left: 20px;
+    margin-top: 10px;
+  }
+}
+
+.comment__header {
+  padding: 0;
+}
+
+.comment__textarea {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: @basic-font;
+  text-transform: uppercase;
+  color: @special-dark-grey;
+  border: 1px solid #e7e7e7;
+  width: 265px;
+  height: 138px;
+  padding: 0;
+  padding-top: 10px;
+  padding-left: 13px;
+  resize: none;
+}
+
+@media (min-width: 768px) {
+  .comment__textarea {
+    width: 611px;
+    height: 158px;
+    margin-top: 40px;
+    padding-left: 18px;
+    padding-top: 8px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 6px;
+
+    input {
+      height: 50px;
+      padding-left: 20px;
+      margin-left: 17px;
+    }
+  }
+
+  .comment__header h2 {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 45px;
+    position: relative;
+
+    &::after {
+      width: 479px;
+      left: 40px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: @basic-green;
+      position: absolute;
+      top: 67px;
+      left: -70px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .comment__header h2 {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 37px;
+
+    &::after {
+      width: 1107px;
+      left: 43px;
+      top: 1px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 2px;
+      background-color: @basic-green;
+      position: absolute;
+      top: 23px;
+      left: -110px;
+    }
+  }
+
+  .comment__textarea {
+    width: 1200px;
+    height: 156px;
+    margin-top: 40px;
+    padding-left: 18px;
+    padding-top: 8px;
+  }
+}

@@ -1,7 +1,7 @@
 let closeButton = document.querySelector('.header__toggle');
 let menu = document.querySelector('.header__nav');
 closeButton.onclick = function () {
-  menu.classList.toggle('menu-closed');
+  menu.classList.toggle('header__nav--closed');
   closeButton.classList.toggle('header__toggle--closed');
 }
 
