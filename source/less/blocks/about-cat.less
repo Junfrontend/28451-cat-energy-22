@@ -49,8 +49,12 @@
     font-size: 16px;
     box-sizing: border-box;
 
+    &:focus {
+      outline: 2px solid @special-dark-grey;
+    }
+
     &:hover {
-      outline: 2px solid @spicial-grey-middle;
+      border: 1px solid @basic-grey;
     }
   }
 }
@@ -88,6 +92,7 @@
     input {
       height: 53px;
       padding: 0;
+      width: 102%;
       padding-left: 20px;
       margin-left: 17px;
       font-size: 20px;
@@ -113,7 +118,7 @@
     margin-bottom: 17px;
 
     input {
-      height: 50px;
+      height: 50.5px;
       padding-left: 20px;
       margin-left: 17px;
     }

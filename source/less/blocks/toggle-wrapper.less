@@ -1,6 +1,6 @@
 
 .toggle-wrapper {
-  margin-top: 29px;
+  margin-top: 30px;
   margin-left: 64px;
   font-size: 16px;
   line-height: 20px;
@@ -47,6 +47,12 @@
   }
 }
 
+.toggle-wrapper__toggle-button--checked {
+  &::after {
+    transform: translateX(calc(100% + 2px));
+  }
+}
+
 .toggle-wrapper__toggle,
 .toggle-wrapper__bar {
   display: none;
@@ -54,11 +60,9 @@
 
 @media (min-width: 768px) {
   .toggle-wrapper {
-    position: absolute;
-    left: 35px;
-    top: 520px;
     width: 570px;
-    margin-top: 42px;
+    margin-top: 8px;
+    margin-left: 98px;
 
     & span {
       font-size: 20px;
@@ -81,13 +85,12 @@
 
   .toggle-wrapper__bar {
     display: block;
-    position: absolute;
+    position: relative;
     width: 429px;
     height: 6px;
     background-color: #dcdcdc;
     border-radius: 6px;
-    left: 70px;
-    top: 13px;
+    left: 22px;
   }
 
   .toggle-wrapper__toggle {
@@ -96,10 +99,10 @@
     height: 8px;
     background-color: @basic-green;
     border-radius: 50%;
-    border: 13px solid white;
-    position: absolute;
-    left: 260px;
-    top: -2px;
+    border: 12px solid white;
+    position: relative;
+    left: -213px;
+    top: 2px;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
 
     &:hover {
@@ -121,7 +124,7 @@
 
     &:active,
     &:focus {
-      border-bottom: none;
+      border-bottom: 1px solid @basic-grey;
     }
   }
 }
@@ -139,7 +142,7 @@
   }
 
   .toggle-wrapper {
-    margin-top: 60px;
-    margin-left: 89px;
+    margin-top: 27px;
+    margin-left: 125px;
   }
 }

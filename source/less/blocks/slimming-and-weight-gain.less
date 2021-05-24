@@ -1,7 +1,7 @@
 .slimming-and-weight-gain {
   background-color: white;
   min-height: 268px;
-  padding-bottom: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .slimming-and-weight-gain__background {
@@ -96,11 +96,12 @@
     background: url("/img/arrow.svg");
     background-color: @basic-grey;
     background-repeat: no-repeat;
+    background-position: -5px 50%;
   }
 
   &:hover {
     &::after {
-      transform: translate(10px) scaleX(1.5);
+      background-position: left 50%;
     }
   }
 
@@ -113,6 +114,7 @@
 @media (min-width: 768px) {
   .slimming-and-weight-gain {
     margin: 0;
+    padding: 0 30px 30px 30px;
   }
 
   .slimming-and-weight-gain--slimming,

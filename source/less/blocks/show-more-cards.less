@@ -68,8 +68,9 @@
     background: white;
     border: 2px solid @basic-grey;
     justify-content: flex-start;
-    height: 420px;
-    margin-top: 80px;
+    height: 417px;
+    width: 320px;
+    margin-top: 81px;
   }
 
   .show-more-cards__header {
@@ -111,12 +112,18 @@
 }
 
 @media (min-width: 1440px) {
+  .show-more-cards {
+    margin-top: 85px;
+    width: 240px;
+    height: 415px;
+  }
+
   .show-more-cards__header::before {
     content: "";
     display: block;
     width: 60px;
     height: 60px;
-    margin: 48px 42px 54px 32px;
+    margin: 48px 42px 48.5px 37px;
     background: url("/img/plus_icon.svg");
   }
 

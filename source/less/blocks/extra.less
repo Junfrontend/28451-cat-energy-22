@@ -38,10 +38,14 @@
   input {
     margin: 0;
     margin-right: 33px;
+    position: absolute;
+    display: none;
   }
 }
 
 .extra__checkbox {
+  position: relative;
+
   &::before {
     content: "";
     display: block;
@@ -49,6 +53,9 @@
     height: 28px;
     border: 1px solid #cdcdcd;
     background-color: white;
+    position: absolute;
+    top: -5px;
+    left: -46px;
   }
 }
 
@@ -56,18 +63,16 @@
   box-shadow: 0 0 0 1px #bababa;
 }
 
-.extra__checkbox:checked {
-  &::before {
-    content: "";
-    display: block;
-    width: 28px;
-    height: 28px;
-    border: 1px solid #cdcdcd;
-    background: url("/img/check_logo.svg");
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.extra__checkbox-wrapper input[type="checkbox"]:checked + .extra__checkbox::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  background: url("/img/check_logo.svg");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .extra__checkbox-wrapper--disabled {
@@ -77,6 +82,7 @@
 
 .extra__checkbox-description {
   margin-top: 5.5px;
+  margin-left: 46px;
 }
 
 @media (min-width: 768px) {
@@ -116,18 +122,22 @@
     }
   }
 
+  .extra__checkbox-description {
+    margin-top: 4px;
+    margin-left: 58px;
+  }
+
   .extra__checkbox {
     &::before {
       height: 38px;
       width: 38px;
+      left: -58px;
     }
   }
 
-  .extra__checkbox:checked {
-    &::before {
-      width: 38px;
-      height: 38px;
-    }
+  .extra__checkbox-wrapper input[type="checkbox"]:checked + .extra__checkbox::before {
+    width: 38px;
+    height: 38px;
   }
 
   .extra__checkbox-wrapper:nth-child(2) {
@@ -153,14 +163,24 @@
       height: 2px;
       background-color: @basic-green;
       position: absolute;
-      top: 23px;
+      top: 21px;
       left: -110px;
     }
 
     &::after {
       width: 1077px;
-      top: 2px;
       left: 43px;
+    }
+  }
+
+  .extra__checkbox-description {
+    margin-left: 59px;
+    margin-top: 3px;
+  }
+
+  .extra__checkbox {
+    &::before {
+      left: -60px;
     }
   }
 

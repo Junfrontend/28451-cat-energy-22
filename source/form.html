@@ -10,9 +10,9 @@
 </head>
 
 <body class="page">
-  <header class="header header--white-background">
+  <header class="header header--white-background container">
     <div class="header__top-bar top-bar top-bar-wrapper">
-      <a>
+      <a href="index.html">
         <picture>
           <source srcset="img/logo-desktop.png" media="(min-width: 1440px)">
           <source srcset="img/logo-tablet.png" media="(min-width: 768px)">
@@ -30,7 +30,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <form class="program-selection-form" action="https://echo.htmlacademy.ru" method="GET">
       <fieldset class="program-selection-form__about-cat about-cat">
         <legend class="about-cat__header">
@@ -52,20 +52,20 @@
       </fieldset>
       <fieldset class="program-selection-form__purpose-of-program purpose">
         <label class="purpose__choose">
-          <input class="purpose__checkbox" type="radio" value="slimming" name="purpose-of-program" checked>
-          <span>
+          <input type="radio" value="slimming" name="purpose-of-program" checked>
+          <span class="purpose__checkbox">
             похудение
           </span>
         </label>
         <label class="purpose__choose">
-          <input class="purpose__checkbox" type="radio" value="weight-gain" name="purpose-of-program">
-          <span>
+          <input type="radio" value="weight-gain" name="purpose-of-program">
+          <span class="purpose__checkbox">
             Набор массы
           </span>
         </label>
         <label class="purpose__choose">
-          <input class="purpose__checkbox" type="radio" value="idontknow" name="purpose-of-program">
-          <span>
+          <input type="radio" value="idontknow" name="purpose-of-program">
+          <span class="purpose__checkbox">
             Не знаю (Нужен ваш совет)
           </span>
         </label>
@@ -100,26 +100,26 @@
           <h2>Дополнительно</h2>
         </legend>
         <label class="extra__checkbox-wrapper">
-          <input class="extra__checkbox" type="checkbox" checked name="extra-sweetener">
-          <span class="extra__checkbox-description">
+          <input type="checkbox" checked name="extra-sweetener">
+          <span class="extra__checkbox extra__checkbox-description">
             Сахарозаменитель
           </span>
         </label>
         <label class="extra__checkbox-wrapper">
-          <input class="extra__checkbox" type="checkbox" name="extra-water">
-          <span class="extra__checkbox-description">
+          <input type="checkbox" name="extra-water">
+          <span class="extra__checkbox extra__checkbox-description">
             Питьевая вода
           </span>
         </label>
         <label class="extra__checkbox-wrapper">
-          <input class="extra__checkbox" type="checkbox" name="extra-milk">
-          <span class="extra__checkbox-description">
+          <input type="checkbox" name="extra-milk">
+          <span class="extra__checkbox extra__checkbox-description">
             Молоко
           </span>
         </label>
         <label class="extra__checkbox-wrapper">
-          <input class="extra__checkbox" type="checkbox" name="extra-vitamins">
-          <span class="extra__checkbox-description">
+          <input type="checkbox" name="extra-vitamins">
+          <span class="extra__checkbox extra__checkbox-description">
             Витамины
           </span>
         </label>
@@ -130,13 +130,13 @@
       </div>
     </form>
   </main>
-  <footer class="footer">
+  <footer class="footer container">
     <div class="footer__contacts contacts footer__contacts--white-background-form">
-      <h3 class="contacts__header-invite">
+      <h3 class="contacts__header-invite contacts__header-invite--white-background-form">
         приглашаем к&nbsp;сотрудничеству дилеров!
         <!-- Неразрывный пробел может заменить br -->
       </h3>
-      <p class="contacts__addres">
+      <p class="contacts__addres contacts__addres--white-background-form">
         ул. Большая
         Конюшенная, д. 19/8
         <span>
@@ -147,11 +147,11 @@
     <div class="footer__map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603441444461!2d30.320872925980453!3d59.93872221965117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609585820122!5m2!1sru!2sru"
-        width="320" height="362" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+        width="100%" height="100%" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"
         class="map"></iframe>
     </div>
     <div class="footer__links links-wrapper">
-      <a class="links-wrapper__logo"><img src="img/text-logo.svg" alt="Картинка с лого" height="24" width="128"></a>
+      <a class="links-wrapper__logo" href="index.html"><img src="img/text-logo.svg" alt="Картинка с лого" height="24" width="128"></a>
       <!-- Проверить ссылки, тк может меняться-->
       <div class="links-wrapper__social">
         <a class="footer__link footer__link--vk" href="www.vk.com">
