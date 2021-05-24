@@ -27,5 +27,3 @@ counter++;
     catImgBefore.classList.remove("cat-range__img--hidden");
   }
 });
-
-
